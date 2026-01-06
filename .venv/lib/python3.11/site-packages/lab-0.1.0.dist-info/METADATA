@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: lab
+Version: 0.1.0
+Summary: Production workflow lab package
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: ruff>=0.5.0; extra == "dev"
+
+# github-production-lab-python
+
+A tiny "production workflow" lab repo to practice:
+- feature branches
+- pull requests (PRs)
+- reviews + branch protection
+- Python tooling (ruff, pytest)
+
+## Local setup
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -U pip
+pip install -e ".[dev]"
+pytest
+ruff check .
+```
