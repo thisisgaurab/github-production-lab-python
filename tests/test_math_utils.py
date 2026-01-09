@@ -23,3 +23,6 @@ def test_divide() -> None:
 def test_divide_by_zero() -> None:
     with pytest.raises(ZeroDivisionError):
         divide(1, 0)
+
+def test_intentional_fail() -> None:
+    assert 1 == 0
