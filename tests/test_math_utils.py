@@ -23,3 +23,5 @@ def test_divide() -> None:
 def test_divide_by_zero() -> None:
     with pytest.raises(ZeroDivisionError):
         divide(1, 0)
+
+
